@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-o5-ErR">
+                                <rect key="frame" x="20.5" y="396" width="373" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZf-oQ-Nn7" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <state key="normal" title="0%"/>
+                                        <connections>
+                                            <action selector="percentageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f8c-Mg-D5h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbO-NV-z3b" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="76.5" y="0.0" width="68" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <state key="normal" title="5%"/>
+                                        <connections>
+                                            <action selector="percentageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdw-hb-eCa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuo-xK-g4n" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="152.5" y="0.0" width="68" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <state key="normal" title="10%"/>
+                                        <connections>
+                                            <action selector="percentageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tx-kx-mxv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUQ-DL-PpW" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="228.5" y="0.0" width="68" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <state key="normal" title="15%"/>
+                                        <connections>
+                                            <action selector="percentageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="je6-yQ-K48"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03x-j2-FfZ" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="304.5" y="0.0" width="68.5" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <state key="normal" title="20%"/>
+                                        <connections>
+                                            <action selector="percentageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xou-7V-U6t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="2SB-fx-AIp"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill Subtotal..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lDQ-AE-z66" customClass="CalculatorTextField" customModule="Calculator" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="255" width="373" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="tgJ-2r-U2a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="44"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yB6-AY-Nhm">
+                                <rect key="frame" x="20.5" y="506" width="373" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tip Amount" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOW-hQ-wAB" customClass="CalculatorLabel" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="250.5" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEd-xL-UiK" customClass="CalculatorLabel" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="258.5" y="0.0" width="114.5" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="V0c-zr-Lnp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="44"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aa2-BU-wGi" customClass="CalculatorLabel" customModule="Calculator" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="108" width="373" height="64.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="54"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u4I-W8-lr9">
+                                <rect key="frame" x="62" y="616" width="290" height="73"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3K6-Ti-ozi">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="Split" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxr-KR-xZW" customClass="CalculatorLabel" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="90.5" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzY-BJ-n94">
+                                                <rect key="frame" x="94.5" y="0.0" width="79.5" height="41"/>
+                                                <color key="textColor" name="white"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="tipSplitTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Nt3-Gg-dQM"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ways" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e23-hB-fJw" customClass="CalculatorLabel" customModule="Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="178" y="0.0" width="112" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is $0.00 per person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQY-7b-w1X">
+                                        <rect key="frame" x="0.0" y="49" width="290" height="24"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <color key="textColor" name="white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lDQ-AE-z66" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-154" id="0av-I6-yD8"/>
+                            <constraint firstItem="eM5-o5-ErR" firstAttribute="top" secondItem="lDQ-AE-z66" secondAttribute="bottom" constant="53" id="1tf-Gt-3gG"/>
+                            <constraint firstItem="aa2-BU-wGi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="7bE-jw-ElG"/>
+                            <constraint firstItem="u4I-W8-lr9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ft6-7x-mV3"/>
+                            <constraint firstItem="aa2-BU-wGi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="GhP-ef-NyV"/>
+                            <constraint firstItem="yB6-AY-Nhm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JBN-sI-mKK"/>
+                            <constraint firstItem="aa2-BU-wGi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="M3A-mC-NNX"/>
+                            <constraint firstItem="eM5-o5-ErR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="NY3-yR-gri"/>
+                            <constraint firstItem="u4I-W8-lr9" firstAttribute="top" secondItem="yB6-AY-Nhm" secondAttribute="bottom" constant="44" id="UZ3-oQ-rE7"/>
+                            <constraint firstItem="u4I-W8-lr9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="VSq-oZ-5WB"/>
+                            <constraint firstItem="lDQ-AE-z66" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="ZZM-aN-IX4"/>
+                            <constraint firstItem="yB6-AY-Nhm" firstAttribute="top" secondItem="eM5-o5-ErR" secondAttribute="bottom" constant="44" id="bMj-j1-gab"/>
+                            <constraint firstItem="eM5-o5-ErR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pww-pN-ERb"/>
+                            <constraint firstItem="lDQ-AE-z66" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rNY-VE-WfR"/>
+                            <constraint firstItem="yB6-AY-Nhm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="w9q-rh-MGE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="billSubtotalTextfield" destination="lDQ-AE-z66" id="2Jp-yF-TKf"/>
+                        <outlet property="countOfWaysSplitTextField" destination="qzY-BJ-n94" id="2gx-GS-CRj"/>
+                        <outlet property="tip0Button" destination="RZf-oQ-Nn7" id="s4v-8Z-JEC"/>
+                        <outlet property="tip10Button" destination="Yuo-xK-g4n" id="Cfj-UN-t2O"/>
+                        <outlet property="tip15Button" destination="RUQ-DL-PpW" id="4nv-5T-nF9"/>
+                        <outlet property="tip20Button" destination="03x-j2-FfZ" id="2Te-g1-04G"/>
+                        <outlet property="tip5Button" destination="cbO-NV-z3b" id="veo-Jp-Nnt"/>
+                        <outlet property="tipSplitLabel" destination="ZQY-7b-w1X" id="Eqg-Hm-ZWA"/>
+                        <outlet property="tipTotalAmountLabel" destination="HEd-xL-UiK" id="pcJ-c4-76T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="white">
+            <color red="1" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
